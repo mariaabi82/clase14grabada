@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
+
+body{
+    margin: 0;
+    color: lightgrey;
+}
+
+nav{
+    background-color: rgb(136, 6, 136);
+    height: 75px;
+    font-family: 'Gayathri', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div{
+    margin: 20px;
+}
+
+nav img {
+    display: none;
+    width: 75px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    
+}
+
+.menu div:hover{
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .menu{
+        display: none;
+    }
+    nav img {
+        display: block;
+    }
+    nav{
+        justify-content: flex-end;
+    }
+}
